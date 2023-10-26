@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <form id="contactForm">
+      <label for="fname">First Name:</label>
+      <input type="text" id="name" name="fname" required />
+      <label for="lname">Last Name:</label>
+      <input type="text" id="lname" name="lname" required />
+
+      <label for="dob">Date of birth:</label>
+      <input type="date" required />
+
+      <label for="country">Select Country:</label>
+      <select name="country" required>
+        India
+        <option value="">India</option>
+        <option value="">Afghanistan</option>
+        <option value="">Albania</option>
+        <option value="">Algeria</option>
+        <option value="">Zimbabwe</option>
+        <option value="">United States</option>
+        <option value="">China</option>
+        <option value="">Brazil</option>
+        <option value="">Australia</option>
+      </select>
+
+      <label for="gender">Select Gender:</label>
+      Male
+      <input type="checkbox" />
+      Female
+      <input type="checkbox" />
+      Trangender
+      <input type="checkbox" />
+
+      <label for="profession">Profession:</label>
+      Job
+      <input type="checkbox" />
+      Business
+      <input type="checkbox" />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+      <label for="number">Mobile Number:</label>
+      <input type="number" id="number" name="number" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="button" onclick="submitForm()">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+
+    <script>
+      function submitForm() {
+        alert("Form submitted!");
+      }
+    </script>
+  </body>
+</html>
